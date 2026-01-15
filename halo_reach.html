@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Halo Platoon-Reach Squad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #070707;
+            --panel: #14110c;
+            --line: #ffb347;
+            --accent: #ffcc4d;
+            --text: #f5f1e6;
+            --muted: #b8b2a4;
+        }
+
+        body {
+            margin: 0;
+            background: radial-gradient(circle at top, #1a1408, #050505);
+            font-family: Rajdhani, system-ui;
+            color: var(--text);
+        }
+
+        table {
+            text-align: center;
+        }
+
+        .squad-wrap {
+            max-width: 680px;
+            margin: 60px auto;
+            background: linear-gradient(180deg, rgba(255, 180, 70, .12), rgba(0, 0, 0, .85));
+            border: 1px solid rgba(255, 180, 70, .25);
+            box-shadow: 0 0 40px rgba(255, 180, 70, .12);
+        }
+
+        .squad-header {
+            padding: 20px;
+            border-bottom: 1px solid rgba(255, 180, 70, .3);
+        }
+
+        .squad-header h1 {
+            margin: 0;
+            font-family: Orbitron;
+            letter-spacing: 1px;
+            color: var(--accent);
+            font-size: 22px;
+        }
+
+        .squad-header small {
+            display: block;
+            margin-top: 6px;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .orbat {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        .orbat th {
+            background: rgba(255, 180, 70, .12);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 12px;
+            padding: 8px;
+            border-bottom: 1px solid rgba(255, 180, 70, .3);
+        }
+
+        .orbat td {
+            padding: 7px;
+            border-bottom: 1px solid rgba(255, 255, 255, .06);
+        }
+
+        .ct {
+            font-weight: 600;
+        }
+
+        .position {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 10px;
+            border-radius: 14px;
+            background: rgba(255, 180, 70, .15);
+            border: 1px solid rgba(255, 180, 70, .35);
+            font-size: 12px;
+            font-weight: 700;
+            color: #1c1204;
+        }
+
+        .corp {
+            background: #ffb347;
+        }
+
+        .lcpl {
+            background: #ffd27a;
+        }
+
+        .pvt {
+            background: #eee0b8;
+        }
+
+        .position::after {
+            content: "▾";
+            font-size: 11px;
+            opacity: .6;
+        }
+
+        .lead {
+            background: linear-gradient(180deg, rgba(255, 70, 70, 0.12), rgba(0, 0, 0, .85));
+            border: 1px solid rgba(255, 70, 70, 0.25);
+            box-shadow: 0 0 40px rgba(255, 70, 70, 0.12);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="squad-wrap">
+
+        <div class="squad-header">
+            <h1>Halo Platoon • Reach Squad</h1>
+            <small>212th Attack Battalion • Airborne Company</small>
+        </div>
+
+        <table class="orbat">
+            <thead class="lead">
+                <tr>
+                    <th>CS - 7605 "Burden"</th>
+                    <th>SQUAD LEADER</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th>CT Number & Name</th>
+                    <th>Position</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ct">CT-5098 “Nova”</td>
+                    <td><span class="position corp">CORP</span></td>
+                </tr>
+                <tr>
+                    <td class="ct">CT-5050 “Zens”</td>
+                    <td><span class="position pvt">PVT</span></td>
+                </tr>
+                <tr>
+                    <td class="ct">CT-4472 “Vandal”</td>
+                    <td><span class="position pvt">PVT</span></td>
+                </tr>
+                <tr>
+                    <td class="ct">CT-9665 “Marrow”</td>
+                    <td><span class="position pvt">PVT</span></td>
+                </tr>
+                <tr>
+                    <td class="ct">CT-2000 “Spark”</td>
+                    <td><span class="position lcpl">LCPL</span></td>
+                </tr>
+                <tr>
+                    <td class="ct">CT-3321 “Nerd”</td>
+                    <td><span class="position pvt">PVT</span></td>
+                </tr>
+                <tr>
+                    <td class="ct">CT-1117 “Klutz”</td>
+                    <td><span class="position pvt">PVT</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+
+</html>
